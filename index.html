@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Стайлгайд: начало</title>
+    <meta charset="utf-8">
+    <meta name="description" content="FrontendFellows #6 - презентация доклада Стайлгайд: начало, автор Успанов Талгат">
+    <meta name="keywords" content="фронтенд стайлгайды, руководство по стилю кода, библиотека паттернов, ui компоненты">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles/screen-16x10.css">
+    <style>
+    .slide--empty {
+        padding: 30px 80px 0;
+    }
+
+    .small {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    .slide--colored {
+        background-color: darkblue;
+    }
+
+    .slide--colored h2,
+    .white {
+        color: #fff;
+    }
+    </style>
+</head>
+
+<body class="shower list">
+    <header class="caption">
+        <h1>Стайлгайд: начало</h1>
+        <p><a href="http://www.gtalk.kz">Талгат Успанов</a>, Bee Software. FrontendFellows №6, 29.07.2016</p>
+    </header>
+    <section class="slide white">
+        <img src="pictures/astfrontend.png" alt="" class="cover">
+    </section>
+    <section class="slide">
+        <img src="pictures/photo.jpg" width="100%" class="cover" alt="">
+    </section>
+    <section class="slide white">
+        <h2 class="title title--main">fb.com/astfrontend</h2>
+        <a href="https://fb.com/astfrontend"><img src="pictures/fb.png" alt="" class="place"></a>
+    </section>
+    <section class="slide white">
+        <h2 class="title title--main">Стайлгайд: начало</h2>
+        <p><a href="http://www.gtalk.kz">Талгат Успанов</a>, Bee Software.</p>
+    </section>
+    <section class="slide">
+        <img src="pictures/haos.jpg" alt="" class="cover" width="100%">
+        <div class="place bottom right small white">tema.livejournal.ru</div>
+    </section>
+    <section class="slide">
+        <h2>Стайлгайд</h2>
+        <blockquote>
+            <p>Руководство по стилю - это такой вид документации, который помогает нам всем (дизайнерам, разработчикам, контент-менеджерам) следовать определённым правилам, чтобы быть последовательными в проекте</p>
+        </blockquote>
+        <figcaption>(с) кто-то в интернетах</figcaption>
+    </section>
+    <section class="slide slide--colored">
+        <h2 class="shout" style="color: #FFF;">Фронтенд стайлгайд</h2>
+    </section>
+    <section class="slide">
+        <h2>Руководство по стилю контента</h2>
+        <img src="pictures/content.png" alt="" width="100%">
+    </section>
+    <section class="slide">
+        <h2>Руководство по стилю кода</h2>
+        <img src="pictures/code-style.png" alt="" width="100%">
+        <div class="place bottom right small">learn.javascript.ru</div>
+    </section>
+    <section class="slide">
+        <img src="pictures/tabs_vs_space.jpg" class="cover" alt="">
+        <div class="place bottom right small">trulycode.com</div>
+    </section>
+    <section class="slide">
+        <img src="pictures/velo.jpg" alt="" class="place" height="100%">
+    </section>
+    <section class="slide">
+        <h2><a href="http://editorconfig.org/">EditorConfig</a></h2>
+        <img src="pictures/editconfig.png" alt="" width="100%">
+    </section>
+    <section class="slide">
+        <h2 class="title">
+            <code>.editorconfig</code>
+        </h2>
+        <pre><code>root = true
+<mark>[*]</mark>
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+insert_final_newline = true
+<mark>[*.html]</mark>
+indent_size = 4
+            </code>
+        </pre>
+    </section>
+    <section class="slide slide--colored">
+        <h2 class="shout" style="color: #FFF;">Eslint</h2>
+    </section>
+    <section class="slide">
+        <h2>1. <a href="http://eslint.org/docs/user-guide/integrations">Текстовый редактор / IDE</a></h2>
+        <p>
+            <code class="mark next">.eslintrc</code>
+        </p>
+        <p><img src="pictures/eslint.png" alt="" class="next"></p>
+    </section>
+    <section class="slide">
+        <h2 class="title">
+            <code>.eslintrc</code>
+        </h2>
+        <pre><code>{
+  "rules": {
+      "no-console": <mark>0</mark>, // 'off'
+      "no-empty": <mark>1</mark>, // 'warn'
+      "indent": [<mark>2</mark>, 2], // 'error'
+      ...
+    }
+}
+</code></pre>
+    </section>
+    <section class="slide">
+        <h2>Уведомления в консоли</h2>
+        <img src="pictures/eslint_console.png" alt="" width="100%">
+    </section>
+    <section class="slide">
+        <h2>HTML, CSS</h2>
+        <ul>
+            <li class="next">CSS: <a href="https://github.com/stylelint/stylelint">stylelint</a></li>
+            <li class="next">HTML: плагины для рекдакторов</li>
+        </ul>
+        <img class="next" src="pictures/htmlpretty.gif" alt="">
+    </section>
+    <section class="slide">
+        <h2>Библиотека паттернов / UI компоненты</h2>
+        <img src="pictures/ui-components.svg" class="cover" style="margin-top: 100px;" alt="" width="100%">
+        <div class="place bottom right small">Draft U.S. Web Design Standards</div>
+    </section>
+    <section class="slide" style="background:darkred;">
+        <h2 class="shout" style="color: #FFF;">Исследование</h2>
+    </section>
+    <section class="slide">
+        <img src="pictures/brad.jpg" class="cover">
+        <div class="place bottom right small">bradfrost.com</div>
+    </section>
+    <section class="slide">
+        <img class="place" src="pictures/open.png" alt="">
+    </section>
+    <section class="slide" style="background:darkblue;">
+        <h2 class="shout" style="color: #FFF; font-size: 140px;">Прототипирование</h2>
+    </section>
+    <section class="slide">
+        <img src="pictures/prototype.jpg" alt="" class="cover">
+        <div class="place bottom right small">Samantha Warren</div>
+    </section>
+    <section class="slide" style="background:darkgreen;">
+        <h2 class="shout" style="color: #FFF;">Создание</h2>
+    </section>
+    <section class="slide">
+        <img src="pictures/ui.png" alt="" class="cover">
+        <div class="place bottom right small">Draft U.S. Web Design Standards</div>
+    </section>
+    <section class="slide">
+        <h2>От простого к сложному</h2>
+        <ul>
+            <li>Базовые элементы (логотип, кнопки)</li>
+            <li>Цветовая палитра</li>
+            <li>Типографика</li>
+            <li>Взаимодействие (Анимация)</li>
+            <li>Навигация</li>
+            <li>Формы</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <img src="pictures/dropbox.png" class="place" alt="">
+    </section>
+    <section class="slide">
+        <h2>Принципы</h2>
+        <ul>
+            <li class="next"> публичность
+                <li class="next"> гибкость
+                    <li class="next"> доступность
+                        <li class="next"> поддержка
+                            <li class="next"> без велосипедов
+        </ul>
+    </section>
+    <section class="slide slide--colored">
+        <h2 class="shout">Стайлгайд</h2>
+    </section>
+    <section class="slide">
+        <h2>Полезные ссылки</h2>
+        <ul class="double">
+            <li><a href="http://alistapart.com/article/creating-style-guides">Creating Style Guides</a>
+                <li><a href="http://frontender.info/why-coding-style-matters/">Почему стиль кода имеет значение</a>
+                    <li><a href="https://24ways.org/2011/front-end-style-guides/">Front-end Style Guides</a>
+                        <li><a href="http://styleguides.io/" title="">Website Style Guide Resources</a>
+                            <li><a href="https://gimmebar.com/collection/4ecd439c2f0aaad734000022/front-end-styleguides">Сборник стайлгайдов</a>
+                                <li><a href="https://medium.com/@operatino/living-style-guide-tools-in-depth-overview-28cfffb92d05">Living Style Guide Tools In-depth Overview</a>
+                                    <li><a href="http://bradfrost.com/blog/post/interface-inventory/">Interface Inventory</a>
+                                        <li><a href="http://styletil.es/">Style Tiles by Samantha Warren</a>
+                                            <li><a href="https://codyhouse.co/demo/style-guide-template/index.html">Шаблон для UI компонентов</a>
+        </ul>
+    </section>
+    <section class="slide">
+        <h2>Руководство по стилю контента</h2>
+        <ul>
+            <li><a href="http://styleguide.mailchimp.com/" title="">MailChimp Content Style Guide</a></li>
+            <li><a href="https://www.gov.uk/topic/government-digital-guidance/content-publishing" title="">Content and publishing - GOV.UK</a> гос.</li>
+            <li><a href="http://identity.unc.edu/voice-writing-style/">UNC-Chapel Hill Voice & Writing Style</a> университет</li>
+            <li><a href="http://www.economist.com/style-guide/headings-and-captions">The economist</a></li>
+            <li><a href="https://www.drupal.org/drupalorg/style-guide/content">Drupal Content style guide</a></li>
+            <li><a href="https://www.buzzfeed.com/emmyf/buzzfeed-style-guide/"> BuzzFeed Style Guide</a></li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h2>Руководство по стилю кода</h2>
+        <ul>
+            <li><a href="https://github.com/google/styleguide" title="">Google Style Guides</a></li>
+            <li><a href="https://github.com/airbnb/javascript" title=""> JavaScript Style Guide</a> by airbnb</li>
+            <li><a href="http://cssguidelin.es/">CSS Guidelines</a></li>
+            <li><a href="http://sass-guidelin.es/">Sass Guidelines</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Coding_Style">Mozilla Coding style</a></li>
+            <li><a href="http://codeguide.co/">Code Guide</a> by @mdo</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h2>Библиотека паттернов / UI компоненты</h2>
+        <ul>
+            <li><a href="https://standards.usa.gov/" title="">Draft U.S. Web Design Standards</a> гос.</li>
+            <li><a href="https://www.mapbox.com/base/" title="">Mapbox styleguide</a></li>
+            <li><a href="https://github.com/styleguide">GitHub Styleguide</a></li>
+            <li><a href="https://www.ox.ac.uk/public-affairs/style-guide/digital-style-guide?wssl=1">University of Oxford</a> университет</li>
+            <li><a href="http://ux.mailchimp.com/patterns/">The MailChimp Pattern Library</a></li>
+            <li><a href="http://style.codeforamerica.org/">Code for America Website Style Guide</a></li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h2>Талгат Успанов</h2>
+        <ul>
+            <li>
+                <a href="https://twitter.com/talgautb" title="@talgautb">@talgautb</a>
+            </li>
+            <li>
+                <a href="http://www.gtalk.kz">www.gtalk.kz</a>
+            </li>
+            <li>
+                <a href="mailto:talgat.uspanov@yandex.kz?subject=Hi">talgat.uspanov@yandex.kz</a>
+            </li>
+        </ul>
+        <div class="place right top" style="right: 100px;top: 100px;">
+            <img src="pictures/ava.jpg" width="200" alt="" style="border-radius: 4px;">
+        </div>
+        <p class="place bottom">
+            <a href="https://github.com/shower/shower" style="background: none;">
+                <img src="pictures/shower.png" width="100px" alt="">
+            </a>
+        </p>
+    </section>
+    <section class="slide">
+        <h2 class="shout">Вопросы?</h2>
+    </section>
+    <div class="progress"></div>
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+    <script src="shower.min.js"></script>
+</body>
+
+</html>
